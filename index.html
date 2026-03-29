@@ -9,57 +9,148 @@
 <body>
 
   <!-- HERO -->
-  <header class="hero reveal">
-    <h1>Hey, I'm @ARtic!</h1>
-    <p>Roblox Scripter & Game Systems Developer</p>
+  <header class="hero reveal" id="top">
+    <div class="hero-inner">
+      <h1>Hey, I'm @ARtic!</h1>
+      <p>Roblox Scripter & Game Developer</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="hero-btn hero-btn-primary">My Projects</a>
+        <a href="#feedback" class="hero-btn">Client Feedback</a>
+        <a href="#about" class="hero-btn">About Me</a>
+        <a href="#contact" class="hero-btn">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-  <!-- PROJECTS / CLIENTS -->
-  <section class="projects reveal">
-    <h2 class="center-title">Client Feedback</h2>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <img src="./images/superdupernoob111111.png" alt="Client Roblox Avatar">
-        <h3>@superdupernoob111111</h3>
-        <p>
-          "Nice scripter, clean scripts, could read everything clearly, answered all of my questions. Loved it"
-        </p>
+  <main>
+    <!-- PROJECTS -->
+    <section class="projects reveal" id="projects">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Two systems I built to show some of my skills for this portfolio.</p>
       </div>
 
-      <div class="project-card">
-  <img src="./images/El_ProArturo999.png" alt="Client Roblox Avatar">
-  <h3>@El_ProArturo999</h3>
-  <p>
-    "Astounding work, timely, professional, and highly recommended."
-  </p>
-</div>
+      <div class="project-grid">
+        <div class="project-card project-feature">
+          <div class="project-preview">
+            <span>Featured System</span>
+            <strong>Combat</strong>
+          </div>
 
+          <div class="project-content">
+            <h3>Rough Combat System</h3>
+            <p>
+              A modular combat prototype with attack handling, cooldowns, hit detection,
+              and animation hooks built to be expanded into a full game-ready system.
+            </p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_LINK" target="_blank" rel="noopener noreferrer" class="project-link">
+              Demo link
+            </a>
+          </div>
+        </div>
 
-     <div class="project-card">
-  <img src="./images/tkfkrkfj.png" alt="Client Roblox Avatar">
-  <h3>@tkfkrkfj</h3>
-  <p>
-    "Very nice communication and scripts worked flawlessly."
-  </p>
-</div>
+        <div class="project-card project-feature">
+          <div class="project-preview">
+            <span>Featured System</span>
+            <strong>Inventory</strong>
+          </div>
 
+          <div class="project-content">
+            <h3>Inventory System</h3>
+            <p>
+              A flexible inventory system with item management, UI-friendly structure,
+              and room for saving, equipping, and expanding into a full item experience.
+            </p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_LINK" target="_blank" rel="noopener noreferrer" class="project-link">
+              Demo link
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- CLIENT FEEDBACK -->
+    <section class="projects reveal" id="feedback">
+      <div class="section-header">
+        <h2>Client Feedback</h2>
+      </div>
 
-  <!-- ABOUT -->
-  <section class="about reveal">
+      <div class="project-grid">
+        <div class="project-card testimonial-card">
+          <img src="./images/superdupernoob111111.png" alt="Client Roblox Avatar" loading="lazy" decoding="async">
+          <h3>@superdupernoob111111</h3>
+          <p>
+            "Nice scripter, clean scripts, could read everything clearly, answered all of my questions. Loved it"
+          </p>
+        </div>
+
+        <div class="project-card testimonial-card">
+          <img src="./images/El_ProArturo999.png" alt="Client Roblox Avatar" loading="lazy" decoding="async">
+          <h3>@El_ProArturo999</h3>
+          <p>
+            "Amazing work, timely, professional, and highly recommended."
+          </p>
+        </div>
+
+        <div class="project-card testimonial-card">
+          <img src="./images/tkfkrkfj.png" alt="Client Roblox Avatar" loading="lazy" decoding="async">
+          <h3>@tkfkrkfj</h3>
+          <p>
+            "Very nice communication and scripts worked without any issues."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+   <section class="about reveal" id="about">
+  <div class="section-header">
     <h2>About Me</h2>
-    <p>
-      I'm a Roblox scripter with over 1 year of experience developing game systems. I focus on writing clean, efficient code and enjoy debugging and refining gameplay mechanics. <br><br>
+  </div>
 
-      Scripting is something I'm very passionate about, and I typically dedicate multiple hours a day to my projects. I’m reliable, open to feedback, and always looking to grow my skills through development. <br><br>
+  <div class="about-card">
+    <div class="about-badge-center">A little more about how I work and what I care about!</div>
+    <div class="about-divider"></div>
 
-      Looking forward to working with you!
-    </p>
-  </section>
+    <div class="about-content">
+      <p>
+        I'm a Roblox scripter with over a year of experience creating gameplay systems and improving game functions. I try to write clean, efficient code that's easy to read and change. 
+      </p>
+
+      <p>
+        I really enjoy debugging and taking rough ideas and turning them into playable experiences. I care a lot about structure, clear communication, and making sure everything feels as intended. 
+      </p>
+
+      <p>
+        Scripting is something I'm very passionate about, and I spend a lot of time training my skills through different projects. I'm reliable, open to feedback, and always happy to receive criticism to learn.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section class="contact reveal" id="contact">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <p>Reach out here if you want to work together!</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://discord.com/users/840727091589939220" target="_blank" rel="noopener noreferrer">
+          <span>Discord</span>
+          <strong>@ARtic</strong>
+          <small>Message me directly</small>
+        </a>
+
+        <a class="contact-card" href="https://www.roblox.com/users/2383541455/profile" target="_blank" rel="noopener noreferrer">
+          <span>Roblox</span>
+          <strong>@NewSpire</strong>
+          <small>View my profile</small>
+        </a>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer reveal">
