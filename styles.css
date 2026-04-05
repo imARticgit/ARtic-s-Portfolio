@@ -322,6 +322,39 @@ section {
   font-size: 0.98rem;
 }
 
+.timezone-box {
+  margin-top: 40px;
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(8px);
+}
+
+.timezone-box span {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+}
+
+.timezone-box strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.timezone-box small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* FOOTER */
 .footer {
   position: relative;
