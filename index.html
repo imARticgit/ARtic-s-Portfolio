@@ -4,18 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@ARtic's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- BACKGROUND PATTERN -->
+  <div class="bg-pattern" aria-hidden="true">
+    <svg class="bg-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <defs>
+        <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+          <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(125,211,252,0.18)"/>
+        </pattern>
+        <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+          <stop offset="0%" stop-color="transparent"/>
+          <stop offset="100%" stop-color="#060c14"/>
+        </radialGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dots)"/>
+      <rect width="100%" height="100%" fill="url(#vignette)"/>
+    </svg>
+  </div>
+
   <!-- HERO -->
   <header class="hero reveal" id="top">
     <div class="hero-inner">
-      <h1>Hey, I'm @ARtic!</h1>
-      <p>Roblox Scripter & Game Developer</p>
+      <h1>Hey, I'm <span class="accent">@ARtic</span>!</h1>
+      <p class="hero-sub">Roblox Scripter &amp; Game Developer</p>
 
       <div class="hero-actions">
         <a href="#projects" class="hero-btn hero-btn-primary">My Projects</a>
+        <a href="#skills" class="hero-btn">Skills</a>
         <a href="#feedback" class="hero-btn">Client Feedback</a>
         <a href="#about" class="hero-btn">About Me</a>
         <a href="#contact" class="hero-btn">Contact Me</a>
@@ -27,54 +48,116 @@
     <!-- PROJECTS -->
     <section class="projects reveal" id="projects">
       <div class="section-header">
+        <div class="section-tag">Work</div>
         <h2>My Projects</h2>
-        <p>Two systems I built to show some of my skills for this portfolio.
-          (Videos are 40-50 seconds long, they will not take much of your time :)
-        </p>
+        <p>Systems I built to showcase my skills. You should watch them :P</p>
       </div>
 
       <div class="project-grid">
+
+        <!-- CARD 1 -->
         <div class="project-card project-feature">
-          <div class="project-preview">
+          <div class="project-preview preview-blue">
+            <span>Featured System</span>
+            <strong>Lift RNG</strong>
+          </div>
+          <div class="project-content">
+            <h3>Lift RNG</h3>
+            <p>
+              A weighted randomization system that handles item rarity tiers (Common, Rare, Epic, Legendary). Uses math.random with weighted pools and fires RemoteEvents to update the client UI on roll results.
+            </p>
+            <a href="https://www.youtube.com/watch?v=NP9fzOXbKyk" target="_blank" rel="noopener noreferrer" class="project-link">
+              Watch it here ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="project-card project-feature">
+          <div class="project-preview preview-cyan">
+            <span>Featured System</span>
+            <strong>Steal a Food</strong>
+          </div>
+          <div class="project-content">
+            <h3>Steal a Food</h3>
+            <p>
+              Commission game. Features a conveyor system where random foods spawn and move across a map line. Players can claim a plot, steal foods and redirect them to their collection area. Includes mutation variants such as Toxic and Angelic foods that change how the food looks.
+            </p>
+            <a href="https://www.youtube.com/watch?v=PjFxDvQmTGA" target="_blank" rel="noopener noreferrer" class="project-link">
+              Watch it here ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="project-card project-feature">
+          <div class="project-preview preview-teal">
             <span>Featured System</span>
             <strong>Combat</strong>
           </div>
-
           <div class="project-content">
             <h3>Rough Combat System</h3>
             <p>
               A quick combat system I made. Features sprinting (LShift), an M1 combo, and a hitbox system. 
-              I used UserInputService for both sprinting and M1s. I used ReplicatedStorage to fire remote events to damage the dummy and play animations.
+              Used UserInputService for input, and RemoteEvents to damage dummies and play animations.
             </p>
             <a href="https://youtu.be/nvVCFo8swSc" target="_blank" rel="noopener noreferrer" class="project-link">
-              Watch it here!
+              Watch it here ↗
             </a>
           </div>
         </div>
 
+        <!-- CARD 4 -->
         <div class="project-card project-feature">
-          <div class="project-preview">
+          <div class="project-preview preview-sky">
             <span>Featured System</span>
             <strong>PathFinding</strong>
           </div>
-
           <div class="project-content">
             <h3>Pathfinding Dummy</h3>
             <p>
-             A pathfinding system using an R6 rig. Features a walking animation and a dash system for the player to escape. 
-             I used PathfindingService to track the player's position. It only follows the nearest player within a 200-stud radius.
+              A pathfinding system using an R6 rig. Features a walking animation and a dash system for the player to escape. 
+              Uses PathfindingService to track the nearest player within 200 studs.
             </p>
             <a href="https://youtu.be/15ZtJzZfvRE" target="_blank" rel="noopener noreferrer" class="project-link">
-              Watch it here!
+              Watch it here ↗
             </a>
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section reveal" id="skills">
+      <div class="section-header">
+        <div class="section-tag">Expertise</div>
+        <h2>Skills</h2>
+        <p>Systems and mechanics I'm experienced building in Roblox.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-pill"><span class="skill-dot"></span>UI Functionality</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Animation Functionality</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Pivoting</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Tweening</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Combat System</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Attribute System</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Sound System</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Randomization / Rarity System</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Model Manipulation</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Path Finding</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Collision Handling</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Interaction Systems</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Queue System</div>
+        <div class="skill-pill"><span class="skill-dot"></span>State Management</div>
       </div>
     </section>
 
     <!-- CLIENT FEEDBACK -->
     <section class="projects reveal" id="feedback">
       <div class="section-header">
+        <div class="section-tag">Testimonials</div>
         <h2>Client Feedback</h2>
       </div>
 
@@ -106,34 +189,34 @@
     </section>
 
     <!-- ABOUT -->
-   <section class="about reveal" id="about">
-  <div class="section-header">
-    <h2>About Me</h2>
-  </div>
+    <section class="about reveal" id="about">
+      <div class="section-header">
+        <div class="section-tag">Background</div>
+        <h2>About Me</h2>
+      </div>
 
-  <div class="about-card">
-    <div class="about-badge-center">A little more about how I work and what I care about!</div>
-    <div class="about-divider"></div>
+      <div class="about-card">
+        <div class="about-badge-center">A little more about how I work and what I care about!</div>
+        <div class="about-divider"></div>
 
-    <div class="about-content">
-      <p>
-        I'm a 15 year old Roblox scripter with over a year of experience creating gameplay systems and improving game functions. I try to write clean, efficient code that's easy to read and change. 
-      </p>
-
-      <p>
-        I really enjoy debugging and taking rough ideas and turning them into playable experiences. I care a lot about structure, clear communication, and making sure everything feels as intended. 
-      </p>
-
-      <p>
-        Scripting is something I'm very passionate about, and I spend a lot of time training my skills through different projects. I'm reliable, open to feedback, and always happy to receive criticism to learn!
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="about-content">
+          <p>
+            I'm a Roblox scripter with over a year of experience creating gameplay systems and improving game functions. I try to write clean, efficient code that's easy to read and change.
+          </p>
+          <p>
+            I really enjoy debugging and taking rough ideas and turning them into playable experiences. I care a lot about structure, clear communication, and making sure everything feels as intended.
+          </p>
+          <p>
+            Scripting is something I'm very passionate about, and I spend a lot of time training my skills through different projects. I'm reliable, open to feedback, and always happy to receive criticism to learn!
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section class="contact reveal" id="contact">
       <div class="section-header">
+        <div class="section-tag">Get in Touch</div>
         <h2>Contact Me</h2>
         <p>Reach out here if you want to work together!</p>
       </div>
@@ -142,19 +225,20 @@
         <a class="contact-card" href="https://discord.com/users/840727091589939220" target="_blank" rel="noopener noreferrer">
           <span>Discord</span>
           <strong>@ARtic</strong>
-          <small>Message me directly</small>
+          <small>Message me directly!</small>
         </a>
 
         <a class="contact-card" href="https://www.roblox.com/users/2383541455/profile" target="_blank" rel="noopener noreferrer">
           <span>Roblox</span>
           <strong>@NewSpire</strong>
-          <small>View my profile</small>
+          <small>View my profile!</small>
         </a>
       </div>
+
       <div class="timezone-box">
-  <span>Timezone</span>
-  <strong>EST (UTC -5)</strong>
-</div>
+        <span>Timezone</span>
+        <strong>EST (UTC −5)</strong>
+      </div>
     </section>
   </main>
 
