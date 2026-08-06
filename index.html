@@ -29,13 +29,13 @@
   <header class="hero" id="top">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Roblox Scripter &amp; Game Developer</p>
+        <p class="eyebrow">Roblox Scripter &amp; Systems Builder</p>
         <h1>
           I build the <span class="marker">stuff that works</span><br>
           when players aren't looking.
         </h1>
         <p class="hero-lede">
-          Combat, pathfinding, RNG, UI. The systems underneath the game. I write Luau that's clean enough for the next dev to actually enjoy reading.
+          Combat, pathfinding, RNG, conveyors — the systems underneath the game. I write Luau that's clean enough for the next dev to actually enjoy reading.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">See my work</a>
@@ -65,21 +65,21 @@
 <span class="c-kw">return</span> <span class="c-var">Combat</span></pre>
         </div>
         <div class="floating-tag tag-1">200 stud detection radius</div>
-        <div class="floating-tag tag-2">Fire script to server</div>
+        <div class="floating-tag tag-2">Weighted RNG pools</div>
       </div>
     </div>
 
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-num">1.5+</span>
+        <span class="stat-num">1+</span>
         <span class="stat-label">Year scripting</span>
       </div>
       <div class="stat">
-        <span class="stat-num">11</span>
+        <span class="stat-num">4</span>
         <span class="stat-label">Systems shipped</span>
       </div>
       <div class="stat">
-        <span class="stat-num">14+</span>
+        <span class="stat-num">14</span>
         <span class="stat-label">Core skill areas</span>
       </div>
       <div class="stat">
@@ -95,8 +95,8 @@
       <div class="goal-card">
         <div class="goal-info">
           <p class="eyebrow">Saving up</p>
-          <h3>My new computer fund</h3>
-          <p class="goal-sub">Every commission goes toward a pc that can genuinely run studio/discord/obs/vs code without exploding.</p>
+          <h3>New computer fund</h3>
+          <p class="goal-sub">Every commission goes toward a machine that can actually run Studio without wheezing.</p>
         </div>
         <div class="goal-track-wrap">
           <div class="goal-numbers">
@@ -117,7 +117,7 @@
               </svg>
             </div>
           </div>
-          <span class="goal-percent">23% there! *updated frequently</span>
+          <span class="goal-percent">23% there</span>
         </div>
       </div>
     </section>
@@ -127,7 +127,7 @@
       <div class="section-head">
         <p class="eyebrow">Selected work</p>
         <h2>Projects</h2>
-        <p class="section-sub">Four systems that show how I think, not just what I built. Each video runs under a minute. *sorry for the low quality*</p>
+        <p class="section-sub">Four systems that show how I think, not just what I built. Each video runs under a minute.</p>
       </div>
 
       <div class="project-list">
@@ -195,17 +195,17 @@
         <article class="project-row reveal reverse">
           <div class="project-visual visual-path">
             <span class="visual-kicker">System 04</span>
-            <h3 class="visual-title">Pathfinding</h3>
+            <h3 class="visual-title">Hologram</h3>
           </div>
           <div class="project-info">
-            <h3>Pathfinding Dummy</h3>
-            <p>An R6 rig that hunts the nearest player within a 200-stud radius using PathfindingService, complete with a walking animation and a dash the player can use to break line of sight and escape.</p>
+            <h3>Advanced Hologram</h3>
+            <p>Clones a live player's character, applies their real appearance via <code>HumanoidDescription</code>, then freezes every Motor6D into a fixed pose and reskins each part with ForceField material for that futuristic look. Since the rig is fully anchored, movement is driven by snapshotting each part's CFrame offset from the root and reapplying it every Heartbeat since true rigid-body motion with no physics joints. A token system per build slot prevents duplicate holograms if the server fires the spawn event twice.</p>
             <div class="tag-row">
-              <span class="mini-tag">PathfindingService</span>
-              <span class="mini-tag">R6 Animation</span>
-              <span class="mini-tag">Radius Detection</span>
+              <span class="mini-tag">HumanoidDescription</span>
+              <span class="mini-tag">Rigid-Body Offsets</span>
+              <span class="mini-tag">Race Condition Guard</span>
             </div>
-            <a href="https://youtu.be/15ZtJzZfvRE" target="_blank" rel="noopener noreferrer" class="watch-link">
+            <a href="https://youtu.be/a3pX-1RgFtw" target="_blank" rel="noopener noreferrer" class="watch-link">
               <span>Watch the breakdown</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -297,10 +297,10 @@
         </div>
         <div class="about-copy">
           <p class="eyebrow">About me</p>
-          <h2>Systems first, polish second, deliver third.</h2>
-          <p>I'm a 15 year old Roblox scripter with over a year and a half of experience building gameplay systems and tightening up existing ones. I write Luau that's easy to read, easy to hand off, and easy to change six months later.</p>
-          <p>Debugging is mostly my favorite part, especially taking a rough idea and turning it into something that feels intentional. I care about structure, clear communication, and making sure the final feel matches what you pictured.</p>
-          <p>I consider myself reliable, I take feedback well, and I'd 100% rather hear "this part's wrong" now than after launch.</p>
+          <h2>Systems first, polish second, ego never.</h2>
+          <p>I'm a Roblox scripter with over a year of experience building gameplay systems and tightening up existing ones. I write Luau that's easy to read, easy to hand off, and easy to change six months later.</p>
+          <p>Debugging is genuinely my favorite part — taking a rough idea and turning it into something that feels intentional. I care about structure, clear communication, and making sure the final feel matches what you pictured.</p>
+          <p>I'm reliable, I take feedback well, and I'd rather hear "this part's wrong" now than after launch.</p>
         </div>
       </div>
     </section>
@@ -308,7 +308,7 @@
     <!-- CONTACT -->
     <section class="section section-contact" id="contact">
       <div class="section-head">
-        <p class="eyebrow">Let's talk!</p>
+        <p class="eyebrow">Let's talk</p>
         <h2>Have a project in mind?</h2>
         <p class="section-sub">Reach out on either — I check both daily.</p>
       </div>
